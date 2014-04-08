@@ -45,4 +45,9 @@
 
 @property(copy) NSArray *locations;
 
+/* A flag that determines if the Angle Gradient Layer should ignore the
+ * clipping rect of the context provided in drawInContext: and instead
+ * use its own bounding rect to determine the size to draw */
+@property(nonatomic) BOOL useBoundingRect;
+
 @end
