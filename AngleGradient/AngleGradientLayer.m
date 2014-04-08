@@ -77,7 +77,6 @@ static void angleGradient(byte* data, int w, int h, int* colors, int colorCount,
 - (void)drawInContext:(CGContextRef)ctx
 {
 	CGContextSetFillColorWithColor(ctx, self.backgroundColor);
-	CGRect rect = CGContextGetClipBoundingBox(ctx);
 	CGRect rect = self.useBoundingRect ? self.bounds : CGContextGetClipBoundingBox(ctx);
 	CGContextFillRect(ctx, rect);
 
